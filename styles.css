@@ -1,0 +1,261 @@
+/*css for 2212822_IA*/
+
+body{
+    background: url('media/background.png');
+    background-size: cover; /*make sure that image background cover the window*/
+    font-family: Cambria; 
+}
+nav{
+    height: 100%;
+    width: 160px;
+    position: fixed;/*set the navigation bar to be fixed at a place*/
+    z-index: 1; /*make sure that navigation bar is always on top of everything*/
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /*disable horizontal scroll*/
+    background-color: rgb(78, 94, 121);
+}
+nav ul{
+   list-style-type: none; 
+}
+nav a{
+    padding: 20px 15px 20px 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+}
+nav a:hover{
+    color: rgb(157, 255, 255);
+}
+.page{
+    margin-left: 160px;/*prevent anything to be hidden by the navigation bar*/
+    padding: 0 20px;    
+}
+.containerIntro{
+    align-self: center;
+    display: flex;/*parents of myPhoto and detailsIntro*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    padding:80px; 
+}
+#myPhoto{
+    width: 350px;
+    margin: 40px;
+    border: 3px solid black;
+    border-radius: 80px;
+}
+.detailsIntro{
+    width: 500px;
+    margin: 40px;
+}
+.detailsIntro h2{
+    font-size: 20px;
+}
+.detailsIntro h1{
+    font-size: 50px;
+    font-family: 'Lucida Handwriting', cursive;/*different font for name*/
+    margin-bottom: 0;
+}
+.detailsIntro p{
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 5px;
+}
+.title{ /*same title style for education, timetable, favourite and contact*/
+    background-color: rgba(51, 67, 93, 0.5);
+    width: 40%;
+    margin: 60px auto;
+    padding: 0 5px;
+    text-align: center;
+    color: white;
+    border: 4px outset rgb(78, 94, 121);
+    border-radius: 10px;
+}
+.title h1{
+    font-family: cursive;
+    margin-bottom: 0;
+}
+.title h3{
+    margin-top: 0;
+}
+.containerFav{
+    display: flex;/*parents for all cardFav*/
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.cardFav{
+    display: flex;/*parents for iconFav, detailsFav and playMusic(fav6)*/
+    background-color: rgb(236, 251, 255);
+    width: 320px;
+    height: 100px;
+    margin: 20px;
+    padding: 0 20px;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.6);   
+}
+.iconFav{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.detailsFav h2{
+    margin-bottom: 0;
+}
+.detailsFav p{
+    margin-top: 0;
+    font-style: oblique;
+}
+#fav3{
+    background-color: rgb(49, 120, 115); /*different background colour to show the favourite colour*/
+    color: white;
+}
+.playMusic{
+    width: 30%;
+    margin-left: 25px;
+}
+.playMusic p{
+    margin-bottom: 0;
+    font-size: 12px;
+    font-style: italic;
+}
+#playIcon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+    float: right;
+}
+.timetableTab{
+    background-color: rgb(113, 111, 111);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    width: 20%; 
+}
+.timetableTab:hover{
+    background-color: rgb(119, 119, 119);
+}
+.tabContent{
+    color: black;
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 100px;    
+}
+table{
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    width: calc(100% / 7); /* Divide the width by the number of columns */
+    text-align: center;
+    padding: 10px; 
+}
+.containerContact{
+    background-color: rgb(158, 185, 228);
+    padding: 40px;
+    width: 50%;
+    margin: auto;
+    display: flex; /*parents for h3 and all detailsContact*/
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.6)
+}
+.detailsContact{
+    width: 80%;
+    display: flex; /*parents for img, p and a*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.detailsContact img{
+    width: 20px;
+    margin-right: 20px;
+}
+.detailsContact p{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-style: italic;
+}
+.detailsContact a{
+    color: rgb(248, 249, 250);
+    background-color: rgb(78, 94, 121);
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-left: 10px;
+}
+.education{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.levelEdu {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 5px;
+    background-color: rgb(218, 238, 255);
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .levelEdu:hover { /*for when the level edu is active(clicked) or hover*/
+    background-color: rgb(204, 204, 204);/*different background colour*/
+}
+.contentEdu{
+    display: none; /*the contentEdu is hidden by default*/
+    padding: 20px 20px;
+}
+.school{
+    display: flex;/*parents for img and detailsEdu*/
+    align-items: center;
+    margin: 10px 0;
+}
+.school img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.detailsEdu h3{
+    margin-bottom: 0;
+    font-style: italic;
+}
+.detailsEdu p{
+    margin-top: 0;
+}
+.levelEdu:after {
+    content: '\02795'; /*Unicode character for "plus"(+)*/
+    font-size: 12px;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: '\2796'; /*Unicode character for "minus"(-)*/
+}
+
+

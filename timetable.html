@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!---Fitrah Nur Humaira 2212822-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMETABLE</title><!---Class Time table Page-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="favourite.html">Favourite</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+        </ul>
+    </nav>
+    <div class="page">
+        <div class="title">
+            <h1>CLASS TIME TABLE</h1>
+            <h3>"Organize Your Success"</h3>
+        </div>
+        
+        <!--Creating a row of button that can show diffeterent time table when it is clicked-->
+        <!--function openPage is called when it is clicked-->
+        <button class="timetableTab" onclick="openPage('t1',this,'rgb(78, 94, 121)')">SEM 1 22/23</button>
+        <button class="timetableTab" onclick="openPage('t2',this,'rgb(78, 94, 121)')">SEM 2 22/23</button>
+        <button class="timetableTab" onclick="openPage('t3',this,'rgb(78, 94, 121)')">SEM 1 23/24</button>
+        <button class="timetableTab" onclick="openPage('t4',this,'rgb(78, 94, 121)')" id="default">SEM 2 23/24</button> <!--current semester are set to default-->
+        <button class="timetableTab" onclick="openPage('t5',this,'rgb(78, 94, 121)')">SEM 1 24/25</button>
+
+        <!--multiTables holds all time tables-->
+        <!--Total of 5 tables according to semester-->
+        <div class="multiTables">
+            <div class="tabContent" id="t1">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>0830 - 0950 </th>
+                        <th>1000 - 1120 </th>
+                        <th>1130 - 1250 </th>
+                        <th>1400 - 1520 </th>
+                        <th>1530 - 1650 </th>
+                        <th>1700 - 1820 </th>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>MFC I<br>CSCI 1303<br>SECT 11</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td></td>
+                        <td></td>
+                        <td>EOP<br>CSCI 1300<br>SECT 2</td>
+                        <td>BUSINESS FUND.<br>INFO 1302<br>SECT 10</td>
+                        <td>DATABASE SYST.<br>INFO 1303<br>SECT 7</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>MFC I<br>CSCI 1303<br>SECT 11</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td></td>
+                        <td></td>
+                        <td>EOP<br>CSCI 1300<br>SECT 2</td>
+                        <td>BUSINESS FUND.<br>INFO 1302<br>SECT 10</td>
+                        <td>DATABASE SYST.<br>INFO 1303<br>SECT 7</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tabContent" id="t2">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>0830 - 0950 </th>
+                        <th>1000 - 1120 </th>
+                        <th>1130 - 1250 </th>
+                        <th>1400 - 1520 </th>
+                        <th>1530 - 1650 </th>
+                        <th>1700 - 1820 </th>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <td></td>
+                        <td>ISE<br>CSCI 1305<br>SECT 3</td>
+                        <td>IC0<br>CSCI 1302<br>SECT 5</td>
+                        <td>PROB & STATS<br>CSCI 1304<br>SECT 2</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>COMP NET<br>CSCI 2301<br>SECT 5</td>
+                        <td>OOP<br>CSCI 1301<br>SECT 8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>BASIC PHILOSOPHY<br>UNGS 1301<br>SECT 12</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td></td>
+                        <td>ISE<br>CSCI 1305<br>SECT 3</td>
+                        <td>IC0<br>CSCI 1302<br>SECT 5</td>
+                        <td>PROB & STATS<br>CSCI 1304<br>SECT 2</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>COMP NET<br>CSCI 2301<br>SECT 5</td>
+                        <td>OOP<br>CSCI 1301<br>SECT 8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>BASIC PHILOSOPHY<br>UNGS 1301<br>SECT 12</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tabContent" id="t3">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>0830 - 0950 </th>
+                        <th>1000 - 1120 </th>
+                        <th>1130 - 1250 </th>
+                        <th>1400 - 1520 </th>
+                        <th>1530 - 1650 </th>
+                        <th>1700 - 1820 </th>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <td>DSA I<br>CSCI 2300<br>SECT 1</td>
+                        <td></td>
+                        <td></td>
+                        <td>PITS<br>CSCI 2303<br>SECT 3</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>KCI<br>UNGS 2290<br>SECT 21</td>
+                        <td>TILAWAH II<br>TQTD 2002<br>SECT 136</td>
+                        <td>BMK<br>LMBD 2204<br>SECT 11</td>
+                        <td>MFC II<br>CSCI 2305<br>SECT 4</td>
+                        <td>SAD<br>INFO 2303<br>SECT 6</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>DSA I<br>CSCI 2300<br>SECT 1</td>
+                        <td></td>
+                        <td></td>
+                        <td>PITS<br>CSCI 2303<br>SECT 3</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td></td>
+                        <td></td>
+                        <td>BMK<br>LMBD 2204<br>SECT 11</td>
+                        <td>MFC II<br>CSCI 2305<br>SECT 4</td>
+                        <td>SAD<br>INFO 2303<br>SECT 6</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tabContent" id="t4">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>0830 - 0950 </th>
+                        <th>1000 - 1120 </th>
+                        <th>1130 - 1250 </th>
+                        <th>1400 - 1520 </th>
+                        <th>1530 - 1650 </th>
+                        <th>1700 - 1820 </th>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <td></td>
+                        <td>DSF<br>CSCI 2302<br>SECT 2</td>
+                        <td></td>
+                        <td>ETHICS<br>UNGS 2380<br>SECT 4</td>
+                        <td>ENG<br>LEED 1301<br>SECT 42</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td></td>
+                        <td>WEB TECH<br>INFO 2302<br>SECT 2</td>
+                        <td></td>
+                        <td>OS<br>CSCI 3300<br>SECT 5</td>
+                        <td>HCI<br>INFO 3307<br>SECT 2</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td></td>
+                        <td>DSF <br>CSCI 2302<br>SECT 2</td>
+                        <td></td>
+                        <td>ETHICS<br>UNGS 2380<br>SECT 4</td>
+                        <td>ENG<br>LEED 1301<br>SECT 42</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td></td>
+                        <td>WEB TECH<br>INFO 2302<br>SECT 2</td>
+                        <td></td>
+                        <td>OS<br>CSCI 3300<br>SECT 5</td>
+                        <td>HCI<br>INFO 3307<br>SECT 2</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tabContent" id="t5">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>0830 - 0950 </th>
+                        <th>1000 - 1120 </th>
+                        <th>1130 - 1250 </th>
+                        <th>1400 - 1520 </th>
+                        <th>1530 - 1650 </th>
+                        <th>1700 - 1820 </th>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <td></td>
+                        <td>IS<br>CSCI 2304<br>SECT 2</td>
+                        <td>MFC III<br>CSCI 3303<br>SECT 2</td>
+                        <td>CAAL<br>CSCI 3301<br>SECT 2</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td></td>
+                        <td>DSA II<br>CSCI 3302<br>SECT 2</td>
+                        <td>DATABASE PROG.<br>INFO 2303<br>SECT 3</td>
+                        <td>PROJECT MNG IN SE<br>CSCI 4321<br>SECT 1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td></td>
+                        <td>IS<br>CSCI 2304<br>SECT 2</td>
+                        <td>MFC III<br>CSCI 3303<br>SECT 2</td>
+                        <td>CAAL<br>CSCI 3301<br>SECT 2</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td></td>
+                        <td>DSA II<br>CSCI 3302<br>SECT 2</td>
+                        <td>DATABASE PROG.<br>INFO 2303<br>SECT 3</td>
+                        <td>PROJECT MNG IN SE<br>CSCI 4321<br>SECT 1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>   
+    </div>
+
+    <!--Javascript for Time Table Page-->
+    <script>
+
+        function openPage(pageName, element, color){
+            let i, tabContent, timetableTab;
+            tabContent = document.getElementsByClassName("tabContent");
+
+            // Hide all elements with class="tabContent" by default 
+            for (i = 0; i < tabContent.length; i++){
+                tabContent[i].style.display = "none";
+            }
+
+            // Remove the background colour of all buttons
+            timetableTab = document.getElementsByClassName("timetableTab");
+            for(i = 0; i < timetableTab.length; i++){
+                timetableTab[i].style.backgroundColor ="";
+            }
+
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+
+            // Add the specific color to the button used to open the tab content
+            element.style.backgroundColor = color;
+        }
+
+        // Get the element with id="default" and click on it
+        document.getElementById("default").click();
+    </script>   
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!---Fitrah Nur Humaira 2212822-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAVOURITE</title><!---List of favourites Page-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="favourite.html">Favourite</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+        </ul>
+    </nav>
+    <div class="page">
+        <div class="title">
+            <h1>BEST OF THE BEST</h1>
+            <h3>"Essentials of Happiness"</h3>
+        </div>
+        <!--Container to hold all the cards-->
+        <div class="containerFav">
+            <!--Each type of favourites are placed in a card-->
+            <div class="cardFav" id="fav1"> 
+                <img src="media/favourites/food.png" alt="food" class="iconFav">
+                <div class="detailsFav">
+                    <h2>Food</h2>
+                    <p>Nasi Goreng Pataya</p>
+                </div>
+            </div>
+            <div class="cardFav" id="fav2">
+                <img src="media/favourites/drink.png" alt="drik" class="iconFav">
+                <div class="detailsFav">
+                    <h2>Drink</h2>
+                    <p>Melon Milk</p>
+                </div>
+            </div>
+            <div class="cardFav" id="fav3">
+                <img src="media/favourites/colour.png" alt="colour" class="iconFav">
+                <div class="detailsFav">
+                    <h2>Colour</h2>
+                    <p>Myrtle green</p>
+                </div>
+            </div>
+            <div class="cardFav" id="fav4">
+                <img src="media/favourites/movie.png" alt="movie" class="iconFav">
+                <div class="detailsFav">
+                    <h2>Film Series</h2>
+                    <p>Harry Potter</p>
+                </div>
+            </div>
+            <div class="cardFav" id="fav5">
+                <img src="media/favourites/novel.png" alt="novel" class="iconFav">
+                <div class="detailsFav">
+                    <h2>Hobby</h2>
+                    <p>Reading Novels</p>
+                </div>
+            </div>
+            <div class="cardFav" id="fav6">
+                <img src="media/favourites/song.png" alt="song" class="iconFav">
+                <div class="detailsFav">
+                    <h2>Song</h2>
+                    <p>"Love Poem" by IU</p>
+                </div>
+                <div class="playMusic">
+                    <p>Click here to play the song!</p>
+                    <img src="media/favourites/play.png" alt="play" id="playIcon"> <!--Icon to play music-->
+                </div>   
+            </div>
+        </div> 
+    </div>
+    <audio id="songFav">
+        <source src="media/favourites/Love Poem.mp3" type="audio/mp3"><!--MP3 audio file: the favourite song-->
+    </audio>
+
+    <!--Javascript for Favourite Page-->
+    <script>
+        let songFav = document.getElementById("songFav");
+        let icon = document.getElementById("playIcon");
+
+        icon.onclick = function(){
+            //if the song currently paused, if songFav.play() the icon change to pause
+            if(songFav.paused){
+                songFav.play();
+                icon.src = "media/favourites/pause.png"
+            }
+            //else, if songFav.pause() the icon change to play
+            else{
+                songFav.pause();
+                icon.src = "media/favourites/play.png"
+            }
+        }
+
+    </script>
+  
+  
+</body>
+</html>

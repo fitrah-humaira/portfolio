@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!---Fitrah Nur Humaira 2212822-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUCATION</title><!---Education Journey Page-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="favourite.html">Favourite</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+        </ul>
+    </nav>
+    <div class="page">
+        <div class="title">
+            <h1>EDUCATION JOURNEY</h1>
+            <h3>"The Adventure of Learning"</h3>
+        </div>
+
+        <!--Education hold all contents in one container-->
+        <div class="education">
+            <!--levelEdu is a button that represent different education level. Accordion created-->
+            <button class="levelEdu">Kindergarten</button>
+            <!--contentEdu is the panel that only can be shown when button is clicked--> 
+            <div class="contentEdu">
+                <div class="school">
+                    <img src="media/education/kemas.png" alt="kemas">
+                    <div class="detailsEdu">
+                        <h3>Tadika Kemas Kampung Ulu Gali</h3>
+                        <p>2006 - 2007</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="levelEdu">Pre-School</button>
+            <div class="contentEdu">
+                <div class="school">
+                    <img src="media/education/skug.png" alt="skug">
+                    <div class="detailsEdu">
+                        <h3>Sekolah Kebangsaan Ulu Gali</h3>
+                        <p>2008 - 2009</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="levelEdu">Primary School</button>
+            <div class="contentEdu">
+                <div class="school">
+                    <img src="media/education/skpm.png" alt="skpm">
+                    <div class="detailsEdu">
+                        <h3>Sekolah Kebangsaan Perempuan Methodist Raub</h3>
+                        <p>2010 - 2015</p>
+                    </div>
+                </div>
+            </div>
+            <button class="levelEdu">Secondary School</button>
+            <div class="contentEdu">
+                <div class="school">
+                    <img src="media/education/smka tahap.png" alt="smka tahap">
+                    <div class="detailsEdu">
+                        <h3>Sekolah Menengah Kebangsaan Agama Tengku Ampuan Hajjah Afzan Pahang (TAHAP)</h3>
+                        <p>2016</p>
+                    </div> 
+                </div>
+                <div class="school">
+                    <img src="media/education/mrsm.png" alt="mrsm">
+                    <div class="detailsEdu">
+                        <h3>Maktab Rendah Sains MARA Tun Ghazalie Shafie</h3>
+                        <p>2016 - 2018</p>
+                    </div>
+                </div>
+                <div class="school">
+                    <img src="media/education/mrsm.png" alt="mrsm">
+                    <div class="detailsEdu">
+                        <h3>Maktab Rendah Sains MARA Tun Ghafar Baba</h3>
+                        <p>2019 - 2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="levelEdu">Foundation Studies</button>
+            <div class="contentEdu">
+                <div class="school">
+                    <img src="media/education/iium.png" alt="iium">
+                    <div class="detailsEdu">
+                        <h3>CFS IIUM, Foundation in Engineering and Computer Science </h3>
+                        <p>2021 - 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="levelEdu">Undergraduate</button>
+            <div class="contentEdu">
+                <div class="school">
+                    <img src="media/education/iium.png" alt="iium">
+                    <div class="detailsEdu">
+                        <h3>KICT IIUM, Bachelor of Computer Science </h3>
+                        <p>2022 - Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Javascript for Education Page-->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let levelEdu = document.getElementsByClassName("levelEdu");
+
+        for (let i = 0; i < levelEdu.length; i++) {
+            levelEdu[i].addEventListener("click", function() {
+                //'this' here means the clicked element. and this line will toggle (removed or added) to the 'active'
+                this.classList.toggle("active"); 
+                let contentEdu = this.nextElementSibling;
+                if (contentEdu.style.display === "block") { //if the contentEdu dislay is currently 'block' set it to 'none'
+                    contentEdu.style.display = "none";
+                } else {
+                    contentEdu.style.display = "block";
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>
